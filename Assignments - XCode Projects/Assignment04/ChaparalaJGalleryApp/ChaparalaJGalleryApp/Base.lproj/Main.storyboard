@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GalleryVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GalleryVC" customModule="ChaparalaJGalleryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-OR-kTF" userLabel="BigContainerSV">
+                                <rect key="frame" x="20" y="79" width="353" height="719"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ov6-Vw-pRN" userLabel="SearchSV">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="53"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search keyword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KnN-43-Xgb" userLabel="SearchTF">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="53"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="searchTF:" destination="BYZ-38-t0r" eventType="editingChanged" id="a4R-9f-xvO"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTB-rA-di0" userLabel="SearchBTN">
+                                                <rect key="frame" x="238" y="0.0" width="115" height="53"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="🔍Search">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="search:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dU-2J-xPc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KnN-43-Xgb" firstAttribute="width" secondItem="qTB-rA-di0" secondAttribute="width" multiplier="2" id="Umk-1O-4fd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jEL-0l-kZa" userLabel="PictureIV">
+                                        <rect key="frame" x="0.0" y="62.666666666666657" width="353" height="376.66666666666663"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RvR-Hr-9QS" userLabel="LikeDislikeCommentsSV">
+                                        <rect key="frame" x="0.0" y="448.66666666666663" width="353" height="76"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zan-hA-A78" userLabel="likeDislikeSV">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oui-s0-XDS" userLabel="LikeLBL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="👍">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvY-46-hkg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4u-6N-XhZ" userLabel="DislikeLBL">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="👎">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="dislike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAm-RO-bLV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="F6d-pk-9zi" userLabel="CommentSV">
+                                                <rect key="frame" x="0.0" y="42" width="353" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ed-kb-XS9" userLabel="CommentTF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="276" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9i-WR-jmi" userLabel="SaveBTN">
+                                                        <rect key="frame" x="284" y="0.0" width="69" height="34"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Save">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VbY-bW-2I2"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="p9i-WR-jmi" firstAttribute="width" secondItem="1Ed-kb-XS9" secondAttribute="width" multiplier="0.25" id="ewa-kF-0Xl"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Place to load user comments" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Fy5-Oc-RF8" userLabel="Picture CommentsTV">
+                                        <rect key="frame" x="0.0" y="532.66666666666663" width="353" height="142.33333333333337"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvB-dn-ZJA" userLabel="ResetBTN">
+                                        <rect key="frame" x="0.0" y="683" width="353" height="36"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Reset">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MTN-TG-CFx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RvB-dn-ZJA" firstAttribute="height" secondItem="lDF-OR-kTF" secondAttribute="height" multiplier="0.05" id="l0W-Tq-D5A"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lDF-OR-kTF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9hg-lz-7FK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lDF-OR-kTF" secondAttribute="trailing" constant="20" id="DAX-ga-Edx"/>
+                            <constraint firstItem="Ov6-Vw-pRN" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.07" id="Njx-ph-a5M"/>
+                            <constraint firstItem="jEL-0l-kZa" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="czH-Dp-Vie"/>
+                            <constraint firstItem="lDF-OR-kTF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lUM-vN-qpX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lDF-OR-kTF" secondAttribute="bottom" constant="20" id="uRg-xQ-yn1"/>
+                            <constraint firstItem="RvR-Hr-9QS" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.1" id="yj4-Ix-xA6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTF" destination="1Ed-kb-XS9" id="LO8-1H-vWU"/>
+                        <outlet property="dislikeBTN" destination="c4u-6N-XhZ" id="ZY8-fe-aCX"/>
+                        <outlet property="likeBTN" destination="oui-s0-XDS" id="LNs-4Z-opY"/>
+                        <outlet property="pictureCommentsTV" destination="Fy5-Oc-RF8" id="xWa-Ee-5sX"/>
+                        <outlet property="pictureIV" destination="jEL-0l-kZa" id="JAM-9u-CxK"/>
+                        <outlet property="resetBTN" destination="RvB-dn-ZJA" id="7Hd-xg-56g"/>
+                        <outlet property="saveBTN" destination="p9i-WR-jmi" id="4qK-mK-Lnl"/>
+                        <outlet property="searchBTN" destination="qTB-rA-di0" id="YaF-Su-4yY"/>
+                        <outlet property="searchTF" destination="KnN-43-Xgb" id="n2S-k5-0s3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

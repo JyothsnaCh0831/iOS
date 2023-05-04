@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F2677D96857081741BD26F3 /* Pods_ChaparalaJEntertainmentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E7DE3CBAA41BE29EFFB2CF /* Pods_ChaparalaJEntertainmentApp.framework */; };
+		BA56C6BF29F1B7DF004ACA60 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6BE29F1B7DF004ACA60 /* Model.swift */; };
+		BA56C6C229F1BC60004ACA60 /* ActorTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6C029F1BC60004ACA60 /* ActorTVC.swift */; };
+		BA56C6C329F1BC60004ACA60 /* ActorTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA56C6C129F1BC60004ACA60 /* ActorTVC.xib */; };
+		BA56C6C529F1C7E4004ACA60 /* PosterCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6C429F1C7E4004ACA60 /* PosterCVC.swift */; };
+		BA56C6C829F1CACA004ACA60 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6C729F1CACA004ACA60 /* YouTubeiOSPlayerHelper */; };
+		BA56C6CB29F1CAF5004ACA60 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA56C6CA29F1CAF5004ACA60 /* SDWebImage */; };
+		BA56C6CD29F234D8004ACA60 /* MusicTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA56C6CC29F234D8004ACA60 /* MusicTVC.swift */; };
+		BA677E1829E9D086005AD5E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677E1729E9D086005AD5E9 /* HomeVC.swift */; };
+		BA677E1A29E9D09F005AD5E9 /* ActorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677E1929E9D09F005AD5E9 /* ActorVC.swift */; };
+		BA677E1C29E9D0B7005AD5E9 /* FilmographyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677E1B29E9D0B7005AD5E9 /* FilmographyVC.swift */; };
+		BA677E1E29E9D0D7005AD5E9 /* ActorRatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677E1D29E9D0D7005AD5E9 /* ActorRatingVC.swift */; };
+		BA677E2029E9D0ED005AD5E9 /* MusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677E1F29E9D0ED005AD5E9 /* MusicVC.swift */; };
+		BA677E2229E9D0FE005AD5E9 /* PlayMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA677E2129E9D0FE005AD5E9 /* PlayMusicVC.swift */; };
+		BAF9BC7629E99B7800080950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF9BC7529E99B7800080950 /* AppDelegate.swift */; };
+		BAF9BC7829E99B7800080950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF9BC7729E99B7800080950 /* SceneDelegate.swift */; };
+		BAF9BC7A29E99B7800080950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF9BC7929E99B7800080950 /* ViewController.swift */; };
+		BAF9BC7D29E99B7800080950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF9BC7B29E99B7800080950 /* Main.storyboard */; };
+		BAF9BC7F29E99B7B00080950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF9BC7E29E99B7B00080950 /* Assets.xcassets */; };
+		BAF9BC8229E99B7B00080950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF9BC8029E99B7B00080950 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00FF832AB818243078E330CB /* Pods-ChaparalaJEntertainmentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaparalaJEntertainmentApp.release.xcconfig"; path = "Target Support Files/Pods-ChaparalaJEntertainmentApp/Pods-ChaparalaJEntertainmentApp.release.xcconfig"; sourceTree = "<group>"; };
+		52E7DE3CBAA41BE29EFFB2CF /* Pods_ChaparalaJEntertainmentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChaparalaJEntertainmentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDA60387601EEF780BD5593 /* Pods-ChaparalaJEntertainmentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaparalaJEntertainmentApp.debug.xcconfig"; path = "Target Support Files/Pods-ChaparalaJEntertainmentApp/Pods-ChaparalaJEntertainmentApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BA56C6BE29F1B7DF004ACA60 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BA56C6C029F1BC60004ACA60 /* ActorTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorTVC.swift; sourceTree = "<group>"; };
+		BA56C6C129F1BC60004ACA60 /* ActorTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActorTVC.xib; sourceTree = "<group>"; };
+		BA56C6C429F1C7E4004ACA60 /* PosterCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCVC.swift; sourceTree = "<group>"; };
+		BA56C6CC29F234D8004ACA60 /* MusicTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTVC.swift; sourceTree = "<group>"; };
+		BA677E1729E9D086005AD5E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BA677E1929E9D09F005AD5E9 /* ActorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorVC.swift; sourceTree = "<group>"; };
+		BA677E1B29E9D0B7005AD5E9 /* FilmographyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmographyVC.swift; sourceTree = "<group>"; };
+		BA677E1D29E9D0D7005AD5E9 /* ActorRatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorRatingVC.swift; sourceTree = "<group>"; };
+		BA677E1F29E9D0ED005AD5E9 /* MusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVC.swift; sourceTree = "<group>"; };
+		BA677E2129E9D0FE005AD5E9 /* PlayMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMusicVC.swift; sourceTree = "<group>"; };
+		BAF9BC7229E99B7800080950 /* ChaparalaJEntertainmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaparalaJEntertainmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF9BC7529E99B7800080950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAF9BC7729E99B7800080950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BAF9BC7929E99B7800080950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAF9BC7C29E99B7800080950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF9BC7E29E99B7B00080950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF9BC8129E99B7B00080950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAF9BC8329E99B7C00080950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF9BC6F29E99B7800080950 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA56C6CB29F1CAF5004ACA60 /* SDWebImage in Frameworks */,
+				BA56C6C829F1CACA004ACA60 /* YouTubeiOSPlayerHelper in Frameworks */,
+				8F2677D96857081741BD26F3 /* Pods_ChaparalaJEntertainmentApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B49C7BF62580F1D312FAE94A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DDA60387601EEF780BD5593 /* Pods-ChaparalaJEntertainmentApp.debug.xcconfig */,
+				00FF832AB818243078E330CB /* Pods-ChaparalaJEntertainmentApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BAF9BC6929E99B7800080950 = {
+			isa = PBXGroup;
+			children = (
+				BAF9BC7429E99B7800080950 /* ChaparalaJEntertainmentApp */,
+				BAF9BC7329E99B7800080950 /* Products */,
+				B49C7BF62580F1D312FAE94A /* Pods */,
+				F13062165F097324B717CF0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF9BC7329E99B7800080950 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF9BC7229E99B7800080950 /* ChaparalaJEntertainmentApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF9BC7429E99B7800080950 /* ChaparalaJEntertainmentApp */ = {
+			isa = PBXGroup;
+			children = (
+				BAF9BC7529E99B7800080950 /* AppDelegate.swift */,
+				BAF9BC7729E99B7800080950 /* SceneDelegate.swift */,
+				BAF9BC7929E99B7800080950 /* ViewController.swift */,
+				BAF9BC7B29E99B7800080950 /* Main.storyboard */,
+				BA56C6BE29F1B7DF004ACA60 /* Model.swift */,
+				BA677E1D29E9D0D7005AD5E9 /* ActorRatingVC.swift */,
+				BA677E1F29E9D0ED005AD5E9 /* MusicVC.swift */,
+				BA56C6CC29F234D8004ACA60 /* MusicTVC.swift */,
+				BA677E2129E9D0FE005AD5E9 /* PlayMusicVC.swift */,
+				BA677E1B29E9D0B7005AD5E9 /* FilmographyVC.swift */,
+				BA56C6C429F1C7E4004ACA60 /* PosterCVC.swift */,
+				BA677E1929E9D09F005AD5E9 /* ActorVC.swift */,
+				BA56C6C029F1BC60004ACA60 /* ActorTVC.swift */,
+				BA56C6C129F1BC60004ACA60 /* ActorTVC.xib */,
+				BA677E1729E9D086005AD5E9 /* HomeVC.swift */,
+				BAF9BC7E29E99B7B00080950 /* Assets.xcassets */,
+				BAF9BC8029E99B7B00080950 /* LaunchScreen.storyboard */,
+				BAF9BC8329E99B7C00080950 /* Info.plist */,
+			);
+			path = ChaparalaJEntertainmentApp;
+			sourceTree = "<group>";
+		};
+		F13062165F097324B717CF0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52E7DE3CBAA41BE29EFFB2CF /* Pods_ChaparalaJEntertainmentApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAF9BC7129E99B7800080950 /* ChaparalaJEntertainmentApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF9BC8629E99B7C00080950 /* Build configuration list for PBXNativeTarget "ChaparalaJEntertainmentApp" */;
+			buildPhases = (
+				265BB447EF3EAFE4D63BE65E /* [CP] Check Pods Manifest.lock */,
+				BAF9BC6E29E99B7800080950 /* Sources */,
+				BAF9BC6F29E99B7800080950 /* Frameworks */,
+				BAF9BC7029E99B7800080950 /* Resources */,
+				30819295955EAB590D72E7F6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChaparalaJEntertainmentApp;
+			packageProductDependencies = (
+				BA56C6C729F1CACA004ACA60 /* YouTubeiOSPlayerHelper */,
+				BA56C6CA29F1CAF5004ACA60 /* SDWebImage */,
+			);
+			productName = ChaparalaJEntertainmentApp;
+			productReference = BAF9BC7229E99B7800080950 /* ChaparalaJEntertainmentApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF9BC6A29E99B7800080950 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BAF9BC7129E99B7800080950 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BAF9BC6D29E99B7800080950 /* Build configuration list for PBXProject "ChaparalaJEntertainmentApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAF9BC6929E99B7800080950;
+			packageReferences = (
+				BA56C6C629F1CACA004ACA60 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+				BA56C6C929F1CAF5004ACA60 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = BAF9BC7329E99B7800080950 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF9BC7129E99B7800080950 /* ChaparalaJEntertainmentApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF9BC7029E99B7800080950 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF9BC8229E99B7B00080950 /* LaunchScreen.storyboard in Resources */,
+				BAF9BC7F29E99B7B00080950 /* Assets.xcassets in Resources */,
+				BAF9BC7D29E99B7800080950 /* Main.storyboard in Resources */,
+				BA56C6C329F1BC60004ACA60 /* ActorTVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		265BB447EF3EAFE4D63BE65E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaparalaJEntertainmentApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30819295955EAB590D72E7F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaparalaJEntertainmentApp/Pods-ChaparalaJEntertainmentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaparalaJEntertainmentApp/Pods-ChaparalaJEntertainmentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaparalaJEntertainmentApp/Pods-ChaparalaJEntertainmentApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF9BC6E29E99B7800080950 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF9BC7A29E99B7800080950 /* ViewController.swift in Sources */,
+				BA677E1829E9D086005AD5E9 /* HomeVC.swift in Sources */,
+				BA677E2029E9D0ED005AD5E9 /* MusicVC.swift in Sources */,
+				BAF9BC7629E99B7800080950 /* AppDelegate.swift in Sources */,
+				BA56C6CD29F234D8004ACA60 /* MusicTVC.swift in Sources */,
+				BA677E1E29E9D0D7005AD5E9 /* ActorRatingVC.swift in Sources */,
+				BA56C6BF29F1B7DF004ACA60 /* Model.swift in Sources */,
+				BA677E1C29E9D0B7005AD5E9 /* FilmographyVC.swift in Sources */,
+				BA56C6C529F1C7E4004ACA60 /* PosterCVC.swift in Sources */,
+				BAF9BC7829E99B7800080950 /* SceneDelegate.swift in Sources */,
+				BA677E1A29E9D09F005AD5E9 /* ActorVC.swift in Sources */,
+				BA56C6C229F1BC60004ACA60 /* ActorTVC.swift in Sources */,
+				BA677E2229E9D0FE005AD5E9 /* PlayMusicVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAF9BC7B29E99B7800080950 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF9BC7C29E99B7800080950 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAF9BC8029E99B7B00080950 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF9BC8129E99B7B00080950 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAF9BC8429E99B7C00080950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAF9BC8529E99B7C00080950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAF9BC8729E99B7C00080950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDA60387601EEF780BD5593 /* Pods-ChaparalaJEntertainmentApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChaparalaJEntertainmentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.ChaparalaJEntertainmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAF9BC8829E99B7C00080950 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FF832AB818243078E330CB /* Pods-ChaparalaJEntertainmentApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChaparalaJEntertainmentApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.nwmissouri.ChaparalaJEntertainmentApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF9BC6D29E99B7800080950 /* Build configuration list for PBXProject "ChaparalaJEntertainmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF9BC8429E99B7C00080950 /* Debug */,
+				BAF9BC8529E99B7C00080950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF9BC8629E99B7C00080950 /* Build configuration list for PBXNativeTarget "ChaparalaJEntertainmentApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF9BC8729E99B7C00080950 /* Debug */,
+				BAF9BC8829E99B7C00080950 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA56C6C629F1CACA004ACA60 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BA56C6C929F1CAF5004ACA60 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA56C6C729F1CACA004ACA60 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6C629F1CACA004ACA60 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+		BA56C6CA29F1CAF5004ACA60 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA56C6C929F1CAF5004ACA60 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAF9BC6A29E99B7800080950 /* Project object */;
+}

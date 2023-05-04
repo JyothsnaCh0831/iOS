@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ListVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ListVC" customModule="ChaparalaJListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Wy9-hb-FwC" userLabel="BigControllerVC">
+                                <rect key="frame" x="20" y="64" width="350" height="726"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocery List™️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scb-hf-Kfh">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="109"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="bFh-Gd-5sY">
+                                        <rect key="frame" x="0.0" y="116.99999999999999" width="350" height="217.66666666666663"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cHR-8J-vK8" userLabel="AddingItemVC">
+                                        <rect key="frame" x="0.0" y="342.66666666666669" width="350" height="72.666666666666686"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="idy-59-Sri" userLabel="Item Name">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="72.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="itemTF:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="3oi-Oa-4rv"/>
+                                                </connections>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-wb-Q1C">
+                                                <rect key="frame" x="179" y="0.0" width="171" height="72.666666666666671"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zbj-4d-i4m" userLabel="Quantity">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="72.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzY-ZN-7d3">
+                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="81.333333333333314" height="72.666666666666671"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="➕">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="addToList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzz-ux-4iV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wPc-BM-6MW" userLabel="DeletingItemVC">
+                                        <rect key="frame" x="0.0" y="423.33333333333331" width="350" height="72.666666666666686"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iy3-6v-Fhp" userLabel="Item Number">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="72.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tOx-Fc-SaW">
+                                                <rect key="frame" x="179" y="0.0" width="171" height="72.666666666666671"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeI-p3-hqk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81.666666666666671" height="72.666666666666671"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="🗑️">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="deleteFromList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="As3-rn-nld"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB0-d2-eWT">
+                                                        <rect key="frame" x="89.666666666666686" y="0.0" width="81.333333333333314" height="72.666666666666671"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="🆑">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4YW-QE-8Bp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please enter the item name and quantity, and click on the plus sign to add the item to the grocery list." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="a6j-7E-vNb">
+                                        <rect key="frame" x="0.0" y="504" width="350" height="222"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cHR-8J-vK8" firstAttribute="height" secondItem="Wy9-hb-FwC" secondAttribute="height" multiplier="0.1" id="KnQ-Ji-Abf"/>
+                                    <constraint firstItem="bFh-Gd-5sY" firstAttribute="height" secondItem="Wy9-hb-FwC" secondAttribute="height" multiplier="0.3" id="ela-k7-MMY"/>
+                                    <constraint firstItem="wPc-BM-6MW" firstAttribute="height" secondItem="Wy9-hb-FwC" secondAttribute="height" multiplier="0.1" id="vNM-Uz-QRf"/>
+                                    <constraint firstItem="Scb-hf-Kfh" firstAttribute="height" secondItem="Wy9-hb-FwC" secondAttribute="height" multiplier="0.15" id="vXd-Tn-UoO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wy9-hb-FwC" secondAttribute="bottom" constant="20" id="4sr-58-Nk2"/>
+                            <constraint firstItem="Wy9-hb-FwC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XNA-kH-o2r"/>
+                            <constraint firstItem="Wy9-hb-FwC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gP2-F6-owR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wy9-hb-FwC" secondAttribute="trailing" constant="20" id="iWs-iU-R9U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addBTN" destination="YzY-ZN-7d3" id="4ZV-BK-BUX"/>
+                        <outlet property="clearBTN" destination="ZB0-d2-eWT" id="xM5-O0-VWd"/>
+                        <outlet property="deleteBTN" destination="xeI-p3-hqk" id="Uzo-ux-Jfw"/>
+                        <outlet property="itemNumTF" destination="iy3-6v-Fhp" id="Ei9-pY-AV8"/>
+                        <outlet property="itemQuantityTF" destination="Zbj-4d-i4m" id="3qk-Ta-rfA"/>
+                        <outlet property="itemTF" destination="idy-59-Sri" id="p3Q-4T-Xxu"/>
+                        <outlet property="listIMG" destination="bFh-Gd-5sY" id="kkC-S0-eeD"/>
+                        <outlet property="listTV" destination="a6j-7E-vNb" id="Hm5-AE-nOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.23076923076923" y="83.886255924170612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list" width="640" height="960"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
